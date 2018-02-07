@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int i,a[20],count=0,key;
+printf("enter the 5 number of array\n");
+for(i=0;i<5;i++)
+{
+    scanf("%d",&a[i]);
+}
+printf("ENter element to be searched\n");
+scanf("%d",&key);
+for(i=0;i<5;i++)
+{
+if(key==a[i])
+{
+count++
+}
+}
+if (count==1)
+{
+printf("element existed\n");
+}
+else
+{
+printf("element doesn't exist");
+}
+getch();
+return 0;
+}
